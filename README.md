@@ -20,22 +20,26 @@
 - [X] Спикер (бипер) - работает;
 - [X] Магнитифон
   - [X] Работает чтение с магнитофона, происходит загрузка игр по команде LOAD;
-  - [ ] Проверить выход на магнитофон;
-- [ ] Джойстик;
+  - [X] Проверить выход на магнитофон;
+- [X] Джойстик;
 - [X] Контроллер клавиатуры;
   - [X] Обслуживание PS/2 клавиатуры;
   - [X] Обслуживание оригинальной матричной клавиатуры;
   - [X] Одновременное обслуживание обоих видов клавиатур;
   - [X] Создание схемы в CAD;
   - [X] Чертеж и заказ печатных плат;<br />
-<img src="images/photo_2025-02-01_17-36-43.jpg" width="45%"></img> <img src="images/photo_2025-02-01_18-00-28.jpg" width="45%"></img> <img src="images/photo_2025-02-01_18-02-27.jpg" width="45%"></img> <img src="images/photo_2025-02-01_18-02-48.jpg" width="45%"></img> 
+  <details>
+  <summary>Процесс разработки клавиатурного контроллера</summary> <img src="images/photo_2025-02-01_17-36-43.jpg" width="45%"></img> <img src="images/photo_2025-02-01_18-00-28.jpg" width="45%"></img> <img src="images/photo_2025-02-01_18-02-27.jpg" width="45%"></img> <img src="images/photo_2025-02-01_18-02-48.jpg" width="45%"></img> 
+</details>
+
+- [X] Исправление некоторых ошибок платы ревезии 1_0b и создание новой платы ревизии 1_1 
       
 ## Сборка платы
 ### Какая документация нужна для сборки
 - При разработке платы я руководствовался свеже-отрисованной схемой [Apple IIe (NTSC) - 050-0051-D](https://github.com/baldengineer/bit-preserve/blob/main/Apple/Apple%20IIe/Apple%20IIe%20(NTSC)%20-%20050-0051-D/Apple%20IIe%20(NTSC)%20-%20050-0051-D.pdf "Apple IIe (NTSC) - 050-0051-D") от команды [bit-preserve](https://github.com/baldengineer/bit-preserve/tree/main/Apple/Apple%20IIe "bit-preserve") . Схема хорошо читается (в отличии от моей), полезно иметь ее под рукой для представления об оригинальной схемотехнике Apple IIe (а мы от нее не далеко отступаем).
-- Список деталей BOM на плату rev1.0b здесь: [.csv версия](pdfs/bom_rev1_0b.csv) [.ods OpenOffice версия](pdfs/bom_rev1_0b.ods)
-- Монтажная схема расположения деталей на плату rev1.0b здесь: [монтажная схема rev1.0b](images/pcb_montag_rev1_0b.png)
-- Схема принципиальная на плату rev1.0b здесь: [схема принципиальная rev1.0b](pdfs/circuit_rev1_0b.pdf)
+- Список деталей BOM на плату rev1.0b здесь: [.csv версия](pdfs/bom_rev1_0b.csv) [.ods OpenOffice версия](pdfs/bom_rev1_0b.ods); на плату rev1.1 здесь: [.csv версия](pdfs/bom_rev1_1.csv)
+- Монтажная схема расположения деталей на плату rev1.0b здесь: [монтажная схема rev1.0b](images/pcb_montag_rev1_0b.png); на плату rev1.1 здесь: [монтажная схема rev1.1](images/pcb_montag_rev1_1.png)
+- Схема принципиальная на плату rev1.0b здесь: [схема принципиальная rev1.0b](pdfs/circuit_rev1_0b.pdf); на плату rev1.1 здесь: [схема принципиальная rev1.1](pdfs/circuit_rev1_1.pdf)
 - Книга "мурзилка" о внутреннем устройстве Apple IIe, с временными диаграммами, принципами функционирования MMU, IOU, памяти и многим другим: [Jim Sather - Understanding the Apple IIe](https://archive.org/details/Understanding_the_Apple_IIe) Если что-то пошло не так.
 
 ### Система питаний
